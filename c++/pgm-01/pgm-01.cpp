@@ -3,12 +3,13 @@
 using namespace std;
 
 int main() {
-
+    //definicion de las variables
     int num1;
     int num2;
     int suma, resta, multiplicacion;
     float division;
 
+    //autor
     cout << "+-----------------------------------------+\n";
 	cout << "| pgm_basico.cpp                          |\n";
 	cout << "| Language: C++                           |\n";
@@ -16,6 +17,7 @@ int main() {
 	cout << "+-----------------------------------------+\n";
 	cout << "";
 
+    //pedimos los numeros por consola
     cout << "Escribe un número entero ⌨️: ";
     cin >> num1;
 
