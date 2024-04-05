@@ -1,0 +1,6 @@
+FROM gcc:latest
+COPY . /app
+WORKDIR /app
+#Capa de Compilacion
+RUN g++ -o aplication aplication.cpp
+CMD ["./aplication"]
