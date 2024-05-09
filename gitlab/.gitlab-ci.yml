@@ -1,0 +1,8 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  image: santiagodc8/app-sdc:latest
+  script:
+    - docker run --rm naughty_maxwel:latest

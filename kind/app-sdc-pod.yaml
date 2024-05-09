@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-sdc-pod
+spec:
+  containers:
+  - name: app-sdc-container
+    image: santiagodc8/app-sdc
+    ports:
+    - containerPort: 80

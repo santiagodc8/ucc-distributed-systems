@@ -1,0 +1,29 @@
+image:
+  repository: santiagodc8/app-sdc
+  tag: latest
+  pullPolicy: PullAlways # Opcional: política de extracción de la imagen
+
+service:
+  name: cplusplus
+  type: ClusterIP # Tipo de servicio
+  port: 80 # Puerto del servicio
+
+ingress:
+  enabled: true # Si quieres habilitar el acceso a través de Ingress
+  hosts:
+    - host: ejemplo.com # Host de tu aplicación
+      paths:
+        - /
+
+persistence:
+  enabled: false # Si necesitas almacenar datos persistentes
+
+resources:
+  limits:
+    cpu: 100m # Límite de CPU
+    memory: 128Mi # Límite de memoria
+  requests:
+    cpu: 50m # Solicitud de CPU
+    memory: 64Mi # Solicitud de memoria
+
+
